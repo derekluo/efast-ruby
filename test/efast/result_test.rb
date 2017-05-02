@@ -2,7 +2,7 @@ require 'test_helper'
 
 class EFast::ResultTest < MiniTest::Test
   def test_success_method_with_true
-    r = Goldpay::Result[
+    r = EFast::Result[
       <<-JSON
 {
   "resultCode": 1,
@@ -19,7 +19,7 @@ class EFast::ResultTest < MiniTest::Test
   end
 
   def test_nonexistent_key
-    r = Goldpay::Result[
+    r = EFast::Result[
         <<-JSON
 {
   "resultCode": 1,
@@ -37,7 +37,7 @@ class EFast::ResultTest < MiniTest::Test
   end
 
   def test_success_method_with_false
-    r = Goldpay::Result[
+    r = EFast::Result[
         <<-JSON
 {}
         JSON

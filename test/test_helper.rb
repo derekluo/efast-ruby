@@ -1,10 +1,10 @@
 require 'active_support/core_ext/hash/conversions'
 require 'minitest/autorun'
-require 'goldpay'
+require 'EFast'
 require 'fakeweb'
 
 require 'minitest/byebug' if ENV['DEBUG']
 
-Goldpay.client_id = '9d821413c68c40c884ee847056af3127'
-Goldpay.key = 'cbaff31cecca0ef8b64dc04c0dc7ea9b'
-Goldpay.gateway_url = 'https://tpps888.goldpay.com'
+EFast.key = '84f7691d2fa9ead7ba31bcb2c5719480'
+EFast.secret = '989bff7b9afe425d6735f906dfc41bbb'
+EFast.gateway_url = 'http://openapi.baotayun.com/openapi/webefast/web/?app_act=openapi/router'
