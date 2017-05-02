@@ -11,7 +11,7 @@ module EFast
     end
 
     def success?
-      self[:resultCode] == 1
+      self[:status] == '1'
     end
   end
 end

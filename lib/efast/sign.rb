@@ -9,7 +9,7 @@ module EFast
 
       puts "json_string: #{json_string}" if ENV['DEBUG']
 
-      string_sign_temp = "#{EFast.key}#{json_string}#{EFast.key}"
+      string_sign_temp = "#{EFast.secret}#{json_string}#{EFast.secret}"
       puts "string_sign_temp: #{string_sign_temp}" if ENV['DEBUG']
 
       Digest::MD5.hexdigest(string_sign_temp).upcase
